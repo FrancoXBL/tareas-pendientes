@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de pendientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+          background-color: #AEF5F1;
+          font-family: 'Bruno Ace SC', cursive;
+          padding-top: 60px;
+      }
+      .container {
+          padding: 5px;
+          max-width: 550px;
+          margin: auto;
+          background-color: #CFF7F5;
+          -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0.21);
+          box-shadow: 2px 2px 13px -4px rgba(0, 0, 0.21);
+      }
+      .user {
+          display: inline-flex;
+      }
+      .button {
+          border: 1px solid red;
+          display: inline-flex;
+          border-radius: 5px;
+          padding: 3px;
+          text-decoration: none;
+      }
+      .exit-b {
+          border: 1px solid red;
+          display: inline-flex;
+          border-radius: 5px;
+          padding: 3px;
+          text-decoration: none;
+      }
+      .exit-b:hover {
+          background-color: #EE9988;
+      }
+       h1 {
+        text-align: center;
+       }
+       a {
+        color: black;
+       }
+    </style>
+</head>
+<body>
+  <div class="container">
+    {% block content %}
+    {% endblock content %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'base/main.html' %}
+{% block content %}
+<h1>Formulario</h1>
+
+<a href="{% url 'tareas'%}">Volver</a>
+
+<form method="POST" action="">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit"></input>
+</form>
+
+{% endblock content %}
